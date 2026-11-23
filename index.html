@@ -108,6 +108,28 @@ footer{border-top:1px solid var(--line);padding:32px 0 40px;color:var(--mute);fo
  .hero::after{display:none}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* imagens do movimento */
+.hero{isolation:isolate}
+.hero-image{position:absolute;z-index:-1;right:max(0px,calc((100vw - 1040px)/2));top:50%;transform:translateY(-50%);width:min(43%,490px);height:390px;object-fit:cover;object-position:center;border-radius:28px;opacity:.78;mask-image:linear-gradient(90deg,transparent 0%,#000 24%);box-shadow:0 24px 80px rgba(0,0,0,.45)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1,.hero p{ text-shadow:0 2px 18px rgba(10,8,5,.8)}
+.pillars div{padding:0 0 28px;overflow:hidden}
+.pillars .pillar-img{display:block;width:100%;height:190px;object-fit:cover;margin-bottom:24px}
+.pillars h3,.pillars small,.pillars p{margin-left:26px;margin-right:26px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:34px}
+.gallery figure{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
+.gallery img{display:block;width:100%;height:250px;object-fit:cover}
+.gallery figcaption{padding:16px 18px;color:var(--mute);font-size:.95rem}
+.gallery figcaption b{display:block;color:var(--gold);font-size:1.05rem;margin-bottom:4px}
+@media(max-width:760px){
+ .hero-image{position:relative;display:block;right:auto;top:auto;transform:none;width:100%;height:230px;max-width:100%;margin:0 0 30px;opacity:.9;mask-image:linear-gradient(180deg,#000 70%,transparent)}
+ .hero{padding-top:52px}
+ .pillars .pillar-img{height:210px}
+ .gallery{grid-template-columns:1fr}
+ .gallery img{height:220px}
+}
+
 </style>
 </head>
 <body>
@@ -118,6 +140,7 @@ footer{border-top:1px solid var(--line);padding:32px 0 40px;color:var(--mute);fo
 
 <main id="inicio">
 <section class="hero"><div class="wrap">
+ <img class="hero-image" src="/Imagem%20principal%20(Hero).jpeg" alt="Imagem principal do Despertar Moviment">
  <h1>Você não transforma aquilo que não consegue <b>enxergar.</b></h1>
  <p>Desperte sua consciência. Movimente sua vida. Uma comunidade de desenvolvimento humano integral, fundamentada em Deus.</p>
  <div class="cta-row">
@@ -159,9 +182,21 @@ footer{border-top:1px solid var(--line);padding:32px 0 40px;color:var(--mute);fo
 <section><div class="wrap">
  <h2>Três pilares para o desenvolvimento humano integral</h2>
  <div class="pillars">
-  <div><span class="ico">🙏</span><h3>Espiritualidade</h3><small>Fundamento</small><p>Deus, fé, valores e conexão espiritual.</p></div>
-  <div><span class="ico">❤️</span><h3>Inteligência emocional</h3><small>Desenvolvimento</small><p>Autoconhecimento, emoções, relacionamentos e amor-próprio.</p></div>
-  <div><span class="ico">💡</span><h3>Mentalidade</h3><small>Direcionamento</small><p>Pensamentos, crenças, decisões, comportamentos e atitudes.</p></div>
+  <div><img class="pillar-img" src="/Espiritualidade.jpeg" alt="Espiritualidade"><h3>Espiritualidade</h3><small>Fundamento</small><p>Deus, fé, valores e conexão espiritual.</p></div>
+  <div><img class="pillar-img" src="/Intelige%CC%82ncia%20Emocional.png" alt="Inteligência emocional"><h3>Inteligência emocional</h3><small>Desenvolvimento</small><p>Autoconhecimento, emoções, relacionamentos e amor-próprio.</p></div>
+  <div><img class="pillar-img" src="/Mentalidade.png" alt="Mentalidade"><h3>Mentalidade</h3><small>Direcionamento</small><p>Pensamentos, crenças, decisões, comportamentos e atitudes.</p></div>
+ </div>
+</div></section>
+
+
+<section><div class="wrap">
+ <h2>Consciência que se transforma em movimento</h2>
+ <p class="mute">Desenvolvimento também acontece nas experiências, nas trocas e na construção de uma comunidade que cresce junto.</p>
+ <div class="gallery">
+  <figure><img src="/Transformac%CC%A7a%CC%83o%20pessoal.png" alt="Transformação pessoal"><figcaption><b>Transformação pessoal</b>Pequenas mudanças de consciência que ganham forma nas escolhas diárias.</figcaption></figure>
+  <figure><img src="/Comunidade%20e%20pertencimento.png" alt="Comunidade e pertencimento"><figcaption><b>Comunidade e pertencimento</b>Um espaço para caminhar, compartilhar e evoluir em conjunto.</figcaption></figure>
+  <figure><img src="/Compartilhamento%20de%20conhecimento.jpeg" alt="Compartilhamento de conhecimento"><figcaption><b>Compartilhamento de conhecimento</b>Aprendizados e perspectivas que ampliam nossa visão.</figcaption></figure>
+  <figure><img src="/Encontros%20e%20experie%CC%82ncias.jpeg" alt="Encontros e experiências"><figcaption><b>Encontros e experiências</b>Vivências que aproximam pessoas e colocam o desenvolvimento em prática.</figcaption></figure>
  </div>
 </div></section>
 
