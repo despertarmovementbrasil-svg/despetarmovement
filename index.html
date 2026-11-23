@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Despertar Moviment – Desperte sua consciência. Movimente sua vida.</title>
+<meta name="description" content="Comunidade de desenvolvimento humano integral baseada em espiritualidade, inteligência emocional e mentalidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0805;--bg2:#14100a;--gold:#f5b921;--gold2:#e8b84a;--blue:#3b82f6;--cream:#f6efd9;--mute:#b9ae94;--line:rgba(245,185,33,.28);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--cream);font:300 1.0625rem/1.65 Poppins,system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:88px 0;border-top:1px solid var(--line)}
+h1,h2,h3{margin:0;line-height:1.12;font-weight:800;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,4.5vw,2.9rem);margin-bottom:20px;max-width:18ch}
+h3{font-size:1.2rem;font-weight:600}
+p{margin:0 0 16px;max-width:62ch}
+.gold{color:var(--gold)}
+.mute{color:var(--mute)}
+.btn{display:inline-block;background:linear-gradient(180deg,#ffd35a,#e9a50f);color:#1a1203;font-weight:600;text-decoration:none;padding:15px 30px;border-radius:999px;box-shadow:0 0 28px rgba(245,185,33,.3)}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:none;color:var(--gold);box-shadow:none;border:1px solid var(--gold)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+header.top{position:sticky;top:0;z-index:5;background:rgba(10,8,5,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;letter-spacing:.04em;text-decoration:none}
+.brand span{color:var(--gold)}
+header .btn{padding:9px 20px;font-size:.9rem}
+.brand .tagline{margin-left:14px;padding-left:14px;border-left:1px solid var(--line);color:var(--mute);font-size:.85rem;font-weight:300;letter-spacing:0}
+@media(max-width:700px){.brand .tagline{display:none}}
+/* hero */
+.hero{border:0;padding:96px 0 104px;position:relative;overflow:hidden;background:radial-gradient(ellipse 70% 60% at 85% 20%,rgba(245,185,33,.16),transparent 70%)}
+.hero::after{content:"";position:absolute;right:-22%;top:-30%;width:90%;aspect-ratio:2/1.3;border:1px solid var(--line);border-radius:50%;pointer-events:none}
+.hero h1{font-size:clamp(2.5rem,7.5vw,5.2rem);font-weight:300;max-width:12ch;margin-bottom:28px}
+.hero h1 b{font-weight:800;color:var(--gold)}
+.hero p{font-size:1.2rem;color:var(--mute);max-width:46ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px;position:relative;z-index:1}
+/* two column */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.word{border-left:2px solid var(--gold);padding-left:20px;margin-bottom:28px}
+.word strong{display:block;font-size:1.6rem;font-weight:800;color:var(--gold)}
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.pillars div{padding:32px 28px;border-right:1px solid var(--line)}
+.pillars div:last-child{border:0}
+.pillars h3{color:var(--gold);margin-bottom:6px}
+.ico{display:block;font-size:2rem;line-height:1;margin-bottom:12px}
+.word strong span,.mv h3 span{margin-right:8px}
+.pillars small{display:block;color:var(--blue);font-weight:600;margin-bottom:10px}
+.pillars p{margin:0;color:var(--mute);font-size:.98rem}
+/* dimensions */
+.dims{list-style:none;margin:36px 0 0;padding:0;columns:2;column-gap:56px}
+.dims li{break-inside:avoid;padding:16px 0;border-bottom:1px solid var(--line)}
+.dims b{display:block;font-weight:600;color:var(--gold)}
+.dims span{color:var(--mute);font-size:.97rem}
+.for{list-style:none;margin:0;padding:0}
+.for li{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line)}
+.for li:first-child{padding-top:0}
+.for .e{font-size:1.5rem;line-height:1.3}
+.for-note{margin-top:28px;color:var(--gold2);font-weight:600}
+/* quote */
+.statement{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.statement blockquote{margin:0;font-size:clamp(1.5rem,3.6vw,2.4rem);font-weight:600;line-height:1.3;max-width:24ch}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:56px}
+.mv h3{color:var(--gold);margin-bottom:8px}
+.mv p{color:var(--mute)}
+/* includes */
+.incl{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px 40px}
+.incl li{position:relative}
+
+/* pricing */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.plan{border:1px solid var(--line);border-radius:22px;padding:36px 32px;background:rgba(255,255,255,.02);display:flex;flex-direction:column}
+.plan.best{border:2px solid var(--gold);background:rgba(245,185,33,.06)}
+.plan .tag{color:var(--gold2);font-weight:600;font-size:.9rem;min-height:1.6em}
+.price{font-size:3rem;font-weight:800;color:var(--gold);line-height:1.1;margin:8px 0 2px}
+.plan ul{list-style:none;padding:0;margin:22px 0 28px;flex:1}
+.plan li{padding:6px 0 6px 28px;position:relative;color:var(--cream)}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--gold)}
+.plan .btn{text-align:center}
+.save{display:inline-block;margin-top:24px;border:1px solid var(--gold);border-radius:999px;padding:6px 18px;color:var(--gold2);font-weight:600;font-size:.95rem}
+/* founders */
+.founders{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.big{font-size:clamp(6rem,18vw,11rem);font-weight:800;line-height:.9;color:var(--gold)}
+/* faq */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:12px 0 0;color:var(--mute)}
+/* final */
+.final{text-align:center;background:radial-gradient(ellipse 60% 70% at 50% 100%,rgba(245,185,33,.18),transparent 70%)}
+.final h2{margin:0 auto 20px;max-width:16ch}
+.final p{margin:0 auto 28px;color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:32px 0 40px;color:var(--mute);font-size:.9rem;text-align:center}
+@media(max-width:760px){
+ section{padding:64px 0}
+ .two,.mv,.plans,.founders,.incl{grid-template-columns:1fr;gap:28px}
+ .pillars{grid-template-columns:1fr}
+ .pillars div{border-right:0;border-bottom:1px solid var(--line)}
+ .dims{columns:1}
+ .hero::after{display:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+ <a class="brand" href="#inicio">DESPERTAR <span>MOVIMENT</span><span class="tagline">Desenvolvimento Humano Integral</span></a>
+ <a class="btn" href="#planos">Quero participar</a>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="wrap">
+ <h1>Você não transforma aquilo que não consegue <b>enxergar.</b></h1>
+ <p>Desperte sua consciência. Movimente sua vida. Uma comunidade de desenvolvimento humano integral, fundamentada em Deus.</p>
+ <div class="cta-row">
+  <a class="btn" href="#planos">Ver planos</a>
+  <a class="btn ghost" href="https://wa.me/5585991993462" target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
+ </div>
+</div></section>
+
+<section id="para-quem"><div class="wrap two">
+ <div>
+  <h2>Para quem é o Despertar Moviment</h2>
+  <p>Para quem sente que está vivendo no automático e quer assumir uma posição mais consciente na construção da própria vida.</p>
+  <p class="mute">Aqui, a mudança começa em enxergar: você desenvolve consciência para compreender o que precisa mudar e, depois, coloca isso em movimento.</p>
+  <p class="for-note">Se você se identificou, esta comunidade é para você.</p>
+  <a class="btn" href="#planos">Quero participar</a>
+ </div>
+ <ul class="for">
+  <li><span class="e">🌅</span><span>Quer sair do automático e viver a própria vida com mais intenção.</span></li>
+  <li><span class="e">🚀</span><span>Sabe que algo precisa mudar e quer colocar essa mudança em movimento.</span></li>
+  <li><span class="e">🙏</span><span>Busca fortalecer a fé e ter Deus como fundamento.</span></li>
+  <li><span class="e">💛</span><span>Quer se conhecer melhor e cuidar das emoções, dos relacionamentos e do amor-próprio.</span></li>
+  <li><span class="e">💡</span><span>Quer rever pensamentos, crenças e decisões que direcionam o seu dia a dia.</span></li>
+  <li><span class="e">🧭</span><span>Quer refletir sobre identidade, propósito, saúde, finanças e os processos da vida.</span></li>
+  <li><span class="e">👥</span><span>Procura uma comunidade de pessoas que escolheram evoluir continuamente.</span></li>
+ </ul>
+</div></section>
+
+<section><div class="wrap two">
+ <div>
+  <h2>O nome carrega a ideia</h2>
+  <p>Não basta saber que algo precisa mudar. É preciso desenvolver consciência para compreender a mudança e disposição para colocá-la em movimento.</p>
+ </div>
+ <div>
+  <div class="word"><strong><span>🧠</span>Despertar</strong>Consciência, percepção, reconhecimento e compreensão.</div>
+  <div class="word"><strong><span>🚀</span>Moviment</strong>Atitude, responsabilidade, ação e transformação.</div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <h2>Três pilares para o desenvolvimento humano integral</h2>
+ <div class="pillars">
+  <div><span class="ico">🙏</span><h3>Espiritualidade</h3><small>Fundamento</small><p>Deus, fé, valores e conexão espiritual.</p></div>
+  <div><span class="ico">❤️</span><h3>Inteligência emocional</h3><small>Desenvolvimento</small><p>Autoconhecimento, emoções, relacionamentos e amor-próprio.</p></div>
+  <div><span class="ico">💡</span><h3>Mentalidade</h3><small>Direcionamento</small><p>Pensamentos, crenças, decisões, comportamentos e atitudes.</p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <h2>Sete dimensões para refletir e crescer</h2>
+ <ul class="dims">
+  <li><b>🪪 Identidade</b><span>Reconhecer quem sou.</span></li>
+  <li><b>🧭 Propósito</b><span>Compreender minha direção.</span></li>
+  <li><b>🕊️ Relacionamento com Deus</b><span>Fortalecer meu fundamento espiritual.</span></li>
+  <li><b>💛 Amor-próprio</b><span>Desenvolver uma relação saudável comigo mesmo.</span></li>
+  <li><b>🌿 Saúde</b><span>Cuidar do corpo e do bem-estar.</span></li>
+  <li><b>💰 Finanças</b><span>Desenvolver consciência e responsabilidade financeira.</span></li>
+  <li><b>🌱 Fé e processos</b><span>Aprender a viver e amadurecer durante os processos.</span></li>
+ </ul>
+</div></section>
+
+<section class="statement"><div class="wrap">
+ <blockquote>Ajudar pessoas a saírem do automático e assumirem uma posição mais consciente na construção da própria vida.</blockquote>
+ <div class="mv">
+  <div><h3><span>🎯</span>Nossa missão</h3><p>Promover o desenvolvimento humano integral, despertando a consciência das pessoas por meio da espiritualidade, da inteligência emocional e da mentalidade, fundamentados em Deus, para que desenvolvam uma relação mais consciente consigo mesmas, com os outros e com a vida.</p></div>
+  <div><h3><span>🔭</span>Nossa visão</h3><p>Ser um movimento reconhecido por promover o despertar da consciência e o desenvolvimento humano integral, construindo uma comunidade de pessoas que compreendem a importância de evoluir continuamente e colocar essa consciência em movimento em todas as áreas da vida.</p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <h2>O que você recebe como membro</h2>
+ <p class="mute">Nossa promessa: conhecimento, experiências, reflexões e ferramentas para você ter mais consciência de si, fortalecer seus fundamentos espirituais e agir com mais intenção em cada área da vida.</p>
+ <ul class="incl">
+  <li>👥 Comunidade exclusiva</li>
+  <li>🎥 Quatro lives mensais</li>
+  <li>🗺️ Jornadas temáticas</li>
+  <li>📘 Materiais Exclusivos</li>
+  <li>📚 Biblioteca de conteúdos</li>
+  <li>🌟 Participação na evolução do movimento</li>
+  <li>🎧 Áudios Despertar</li>
+  <li>📲 Suporte via WhatsApp</li>
+ </ul>
+ <p class="mute" style="margin-top:28px">Fora da assinatura, o ecossistema também terá encontros presenciais com ingresso, materiais digitais especiais e A Mesa, um projeto independente.</p>
+</div></section>
+
+<section id="planos"><div class="wrap">
+ <h2>Escolha seu plano</h2>
+ <p class="mute">Oferta de lançamento para os primeiros membros, de 50 a 100 pessoas.</p>
+ <div class="plans">
+  <div class="plan">
+   <div class="tag">&nbsp;</div>
+   <h3>🗓️ Despertar Mensal</h3>
+   <div class="price">R$ 29,70</div>
+   <div class="mute">por mês, cobrança recorrente mensal</div>
+   <ul>
+    <li>Comunidade fechada</li>
+    <li>Quatro lives mensais</li>
+    <li>Jornadas temáticas</li>
+    <li>Materiais Exclusivos</li>
+    <li>Participação nas atividades online</li>
+   </ul>
+   <a class="btn ghost" href="https://wa.me/5585991993462?text=Ol%C3%A1!%20Quero%20assinar%20o%20Despertar%20Mensal." target="_blank" rel="noopener">Assinar plano mensal</a>
+  </div>
+  <div class="plan best">
+   <div class="tag">Melhor valor anual</div>
+   <h3>🏆 Despertar Anual</h3>
+   <div class="price">R$ 297,00</div>
+   <div class="mute">pagamento anual antecipado, equivalente a R$ 24,75 por mês</div>
+   <ul>
+    <li>Todos os benefícios do plano mensal</li>
+    <li>Acesso durante 12 meses</li>
+    <li>Economia de R$ 59,40 em relação a 12 mensalidades</li>
+    <li>Prioridade de comunicação sobre eventos e novidades</li>
+   </ul>
+   <a class="btn" href="https://wa.me/5585991993462?text=Ol%C3%A1!%20Quero%20assinar%20o%20Despertar%20Anual." target="_blank" rel="noopener">Assinar plano anual</a>
+  </div>
+ </div>
+ <span class="save">12 mensalidades: R$ 356,40 · Plano anual: R$ 297,00</span>
+ <p class="mute" style="margin-top:16px;font-size:.9rem">Pagamento anual à vista. Parcelamento pode ser avaliado conforme as condições da plataforma.</p>
+</div></section>
+
+<section><div class="wrap">
+ <h2>Como começar</h2>
+ <details><summary>💬 Como funciona a comunidade?</summary><p>A comunidade fica no WhatsApp, com um canal de avisos oficiais e um espaço de conversas e compartilhamentos. Quando houver necessidade, criamos também um espaço para eventos e encontros.</p></details>
+ <details><summary>🎥 Onde acontecem as lives?</summary><p>As quatro lives mensais, as aulas e os encontros online acontecem em uma plataforma de encontros. Você recebe o acesso e o calendário depois da assinatura.</p></details>
+ <details><summary>💳 Qual a diferença entre o plano mensal e o anual?</summary><p>Os benefícios são os mesmos. No anual você paga R$ 297,00 de uma vez, economiza R$ 59,40 em relação a 12 mensalidades e tem prioridade de comunicação sobre eventos e novidades.</p></details>
+ <details><summary>🎟️ Os encontros presenciais estão incluídos?</summary><p>Não. Os Encontros Despertar são eventos presenciais com ingressos vendidos individualmente.</p></details>
+ <details><summary>🙏 Preciso ter uma religião?</summary><p>O movimento tem Deus como fundamento. Se esse é o seu ponto de partida ou o que você busca fortalecer, você é bem-vindo.</p></details>
+</div></section>
+
+<section class="final"><div class="wrap">
+ <h2>Está na hora de sair do automático</h2>
+ <p>Escolha seu plano ou tire suas dúvidas direto com a gente no WhatsApp.</p>
+ <div class="cta-row" style="justify-content:center">
+  <a class="btn" href="#planos">Escolher meu plano</a>
+  <a class="btn ghost" href="https://wa.me/5585991993462" target="_blank" rel="noopener">💬 (85) 9.9199-3462</a>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Despertar Moviment · Desperte sua consciência. Movimente sua vida.</div></footer>
+</body>
+</html>
