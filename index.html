@@ -160,6 +160,22 @@ footer{background:#0d2b50;color:#c0cede;border-color:rgba(168,208,255,.22)}
 .btn.ghost{background:transparent;color:var(--gold2);border-color:var(--gold2)}
 @media(max-width:760px){main>section:nth-of-type(even):not(.hero):not(.statement):not(.final){background:#0d2b50}}
 
+/* Modelagem editorial inspirada na referência Clax Club — identidade Despertar */
+:root{--navy:#0d2b50;--navy-deep:#071b30;--paper:#f2f0e7;--ink:#172b42;--accent:#78afe9;--accent-light:#b9d9fb}
+section{padding:clamp(68px,8vw,112px) 0}.wrap{max-width:1120px}
+h1,h2,h3{letter-spacing:-.035em}h2{max-width:22ch;font-size:clamp(2rem,4vw,3.15rem);margin-bottom:26px}p{line-height:1.75}
+.btn{border-radius:2px;text-transform:uppercase;letter-spacing:.09em;font-size:.76rem;padding:14px 24px;box-shadow:none;background:var(--accent);color:var(--navy-deep);transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn.ghost{border-radius:2px;border-color:var(--accent);color:var(--accent);background:transparent}
+header.top{background:rgba(7,27,48,.96);border-color:rgba(185,217,251,.15)}.brand{letter-spacing:.12em;font-size:.9rem}.brand span{color:var(--accent)}
+.hero{min-height:520px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(7,27,48,.98),rgba(13,43,80,.88) 62%,rgba(13,43,80,.65))}.hero h1{max-width:13ch;font-size:clamp(2.8rem,6.2vw,5.4rem);line-height:.98}.hero h1 b{color:var(--accent-light)}.hero-image{opacity:.5;mask-image:linear-gradient(90deg,transparent,#000 45%)}
+main>section:nth-of-type(2),main>section:nth-of-type(6),main>section:nth-of-type(9),main>section:nth-of-type(11){background:var(--paper);color:var(--ink);--cream:var(--ink);--mute:#647386;--line:rgba(23,43,66,.15);--gold:#477fb9;--gold2:#477fb9;--blue:#477fb9}
+main>section:nth-of-type(3),main>section:nth-of-type(5),main>section:nth-of-type(7),main>section:nth-of-type(10){background:var(--navy-deep);color:#f2f6fc;--cream:#f2f6fc;--mute:#b9c9da;--line:rgba(185,217,251,.17);--gold:var(--accent-light);--gold2:var(--accent-light);--blue:var(--accent)}
+main>section:nth-of-type(4),main>section:nth-of-type(8){background:var(--navy);color:#f2f6fc;--cream:#f2f6fc;--mute:#c0cede;--line:rgba(185,217,251,.2);--gold:var(--accent-light);--gold2:var(--accent-light);--blue:var(--accent)}
+.pillars{border-radius:3px}.pillars div{border-radius:0}.pillars h3{font-size:1.45rem}.word{border-left-width:1px}
+.plan{border-radius:3px;border-color:var(--line);background:rgba(13,43,80,.025)}.plan.best{border:1px solid var(--blue);background:rgba(109,169,232,.12)}.plan .btn{margin-top:10px}.save{border-radius:2px}
+details{padding:20px 0}summary{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.25rem}.gallery{gap:16px}.gallery figure{border-radius:3px}.gallery img{height:270px}
+.statement blockquote{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500}.final{background:var(--paper)}footer{background:var(--navy-deep)}
+@media(max-width:760px){.hero{min-height:0}.hero h1{font-size:clamp(2.7rem,12vw,4rem)}.gallery img{height:220px}.btn{padding:13px 18px}}
 </style>
 </head>
 <body>
