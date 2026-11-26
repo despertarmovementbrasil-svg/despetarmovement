@@ -228,6 +228,29 @@ a.btn.ghost:hover,.btn.ghost:hover{background:rgba(215,168,67,.10) !important}
 .plan.best{border-color:#d7a843;box-shadow:0 0 0 1px rgba(215,168,67,.16),0 16px 44px rgba(7,27,48,.12)}
 .plan.best .tag,.price,.save,.word strong,.pillars h3,.dims b{color:#d7a843}
 .save{border-color:#d7a843;background:linear-gradient(110deg,rgba(246,223,152,.12),rgba(185,130,37,.06))}
+
+/* Ajuste solicitado: todos os botões arredondados e destaques dourados */
+a.btn, button, input[type="button"], input[type="submit"], input[type="reset"], .btn {
+  border-radius: 999px !important;
+}
+a.btn:not(.ghost), button, input[type="button"], input[type="submit"], input[type="reset"], .plan .btn:not(.ghost) {
+  background: linear-gradient(120deg, #fff0b8 0%, #e7bd55 46%, #bd862b 100%) !important;
+  color: #102945 !important;
+  border: 1px solid rgba(255,232,168,.9) !important;
+  box-shadow: 0 8px 24px rgba(177,126,34,.24) !important;
+}
+a.btn.ghost, .btn.ghost {
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: #e8bd59 !important;
+  border: 1px solid #d7a843 !important;
+  box-shadow: none !important;
+}
+a.btn:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
 </style>
 </head>
 <body>
