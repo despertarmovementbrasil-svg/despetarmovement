@@ -301,6 +301,14 @@ a.btn:hover,button:hover,input[type="button"]:hover,input[type="submit"]:hover,i
 .plan.best{border-color:var(--gold-mid);box-shadow:0 0 0 1px rgba(215,168,67,.18),0 16px 44px rgba(7,27,48,.12)}
 .save{border-color:var(--gold-mid)}
 
+
+/* Hero final: imagem cobre toda a primeira dobra com tratamento escuro */
+.hero{min-height:calc(100svh - 64px);background:#071b30;position:relative;isolation:isolate}
+.hero::before{z-index:1!important;inset:0;background:linear-gradient(90deg,rgba(7,27,48,.94) 0%,rgba(7,27,48,.78) 42%,rgba(7,27,48,.38) 100%),linear-gradient(0deg,rgba(7,27,48,.48),rgba(7,27,48,.18))!important}
+.hero-image{inset:0!important;z-index:0!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:center 38%!important;opacity:.9!important;mask-image:none!important;border-radius:0!important;transform:none!important}
+.hero .wrap{z-index:2!important}
+.hero h1 b{background:linear-gradient(110deg,#fff0b8 0%,#e7bd55 48%,#bd862b 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+@media(max-width:760px){.hero{min-height:calc(100svh - 64px)!important}.hero::before{background:linear-gradient(90deg,rgba(7,27,48,.86),rgba(7,27,48,.55)),linear-gradient(0deg,rgba(7,27,48,.68),rgba(7,27,48,.18))!important}.hero-image{object-position:58% center!important;opacity:.82!important}}
 </style>
 </head>
 <body>
@@ -311,7 +319,7 @@ a.btn:hover,button:hover,input[type="button"]:hover,input[type="submit"]:hover,i
 
 <main id="inicio">
 <section class="hero"><div class="wrap">
- <img class="hero-image" src="/public/Imagem%20principal%20(Hero).jpeg" alt="Imagem principal do Despertar Moviment">
+ <img class="hero-image" src="/Imagem%20principal%20(Hero).jpeg" alt="Imagem principal do Despertar Moviment">
  <h1>Você não transforma aquilo que não consegue <b>enxergar.</b></h1>
  <p>Desperte sua consciência. Movimente sua vida. Uma comunidade de desenvolvimento humano integral, fundamentada em Deus.</p>
  <div class="cta-row">
