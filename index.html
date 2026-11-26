@@ -130,6 +130,36 @@ footer{border-top:1px solid var(--line);padding:32px 0 40px;color:var(--mute);fo
  .gallery img{height:220px}
 }
 
+
+/* Direção visual: azul profundo alternado com cinza claro */
+:root{--bg:#e9edf2;--bg2:#0d2b50;--gold:#6da9e8;--gold2:#477fb9;--blue:#477fb9;--cream:#172b42;--mute:#5d6c7d;--line:rgba(20,53,88,.16);color-scheme:light}
+html{color-scheme:light}
+body{background:var(--bg);color:var(--cream)}
+header.top{background:rgba(13,43,80,.96);color:#f2f6fc}
+.hero{background:linear-gradient(110deg,rgba(13,43,80,.98),rgba(20,62,105,.88))}
+.hero h1,.hero p{color:#f2f6fc}
+.hero p{color:#d5e1ef}
+.hero h1 b{color:#a8d0ff}
+.hero .btn{background:linear-gradient(180deg,#b9d9fb,#78afe9);color:#0d2b50}
+.hero .btn.ghost{color:#d5e8ff;border-color:#a8d0ff}
+main>section:not(.hero):not(.statement):not(.final){background:#e9edf2;color:#172b42}
+main>section:nth-of-type(odd):not(.hero):not(.statement):not(.final){background:#f5f7fa}
+main>section:nth-of-type(even):not(.hero):not(.statement):not(.final){background:#0d2b50;color:#f2f6fc;--cream:#f2f6fc;--mute:#c0cede;--line:rgba(168,208,255,.22);--gold:#a8d0ff;--gold2:#c5e0ff;--blue:#a8d0ff}
+main>section:nth-of-type(even):not(.hero):not(.statement):not(.final) h2,
+main>section:nth-of-type(even):not(.hero):not(.statement):not(.final) h3{color:#f2f6fc}
+main>section:nth-of-type(even):not(.hero):not(.statement):not(.final) .pillars,
+main>section:nth-of-type(even):not(.hero):not(.statement):not(.final) .plan,
+main>section:nth-of-type(even):not(.hero):not(.statement):not(.final) .gallery figure{background:rgba(255,255,255,.045)}
+.statement{background:#14385f;color:#f2f6fc;--cream:#f2f6fc;--mute:#c0cede;--line:rgba(168,208,255,.22);--gold:#a8d0ff}
+.statement .mv p{color:#c0cede}
+.plan{background:rgba(13,43,80,.025)}
+.plan.best{background:rgba(109,169,232,.12)}
+.final{background:#e0e6ed}
+footer{background:#0d2b50;color:#c0cede;border-color:rgba(168,208,255,.22)}
+.btn{background:linear-gradient(180deg,#b9d9fb,#78afe9);color:#0d2b50;box-shadow:0 8px 24px rgba(32,82,132,.16)}
+.btn.ghost{background:transparent;color:var(--gold2);border-color:var(--gold2)}
+@media(max-width:760px){main>section:nth-of-type(even):not(.hero):not(.statement):not(.final){background:#0d2b50}}
+
 </style>
 </head>
 <body>
