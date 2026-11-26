@@ -350,6 +350,18 @@ header.top a.btn,
   box-shadow: 0 10px 32px rgba(201, 145, 31, .48) !important;
   border-radius: 999px !important;
 }
+
+/* Correção de especificidade: CTAs dourados no cabeçalho, hero, planos e fechamento */
+body header.top a.btn,
+body main#inicio section.hero div.cta-row > a.btn:not(.ghost),
+body main section#planos div.plan.best > a.btn,
+body main section.final div.cta-row > a.btn:not(.ghost) {
+  background: linear-gradient(115deg, #fff4c7 0%, #f2c34f 42%, #b97816 100%) !important;
+  color: #071b30 !important;
+  border: 1px solid #ffe9a3 !important;
+  border-radius: 999px !important;
+  box-shadow: 0 10px 32px rgba(201, 145, 31, .48) !important;
+}
 </style>
 </head>
 <body>
