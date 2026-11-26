@@ -273,6 +273,34 @@ a.btn:not(.ghost),button,.btn:not(.ghost),input[type="button"],input[type="submi
  box-shadow:0 8px 24px rgba(177,126,34,.24)!important
 }
 a.btn.ghost,.btn.ghost{border-radius:999px!important;background:transparent!important;color:#e8bd59!important;border:1px solid var(--gold-mid)!important;box-shadow:none!important}
+
+/* Ajuste consolidado: botões arredondados e destaques dourados */
+:root{
+ --gold:#d7a843;--gold2:#f3d88a;--gold-light:#fff0b8;
+ --gold-mid:#e7bd55;--gold-dark:#bd862b;
+}
+a.btn,button,.btn,input[type="button"],input[type="submit"],input[type="reset"],summary{
+ border-radius:999px!important;
+}
+a.btn:not(.ghost),button,.btn:not(.ghost),input[type="button"],input[type="submit"],input[type="reset"]{
+ background:linear-gradient(120deg,var(--gold-light) 0%,var(--gold-mid) 46%,var(--gold-dark) 100%)!important;
+ color:#102945!important;border:1px solid rgba(255,232,168,.9)!important;
+ box-shadow:0 8px 24px rgba(177,126,34,.24)!important;
+}
+a.btn.ghost,.btn.ghost{
+ border-radius:999px!important;background:transparent!important;
+ color:#d7a843!important;border:1px solid var(--gold-mid)!important;box-shadow:none!important;
+}
+a.btn:hover,button:hover,input[type="button"]:hover,input[type="submit"]:hover,input[type="reset"]:hover{
+ filter:brightness(1.08);transform:translateY(-1px);
+}
+.hero h1 b,.gold,.brand span,.price,.plan.best .tag,.save,.word strong,.pillars h3,.dims b{
+ background:linear-gradient(110deg,var(--gold-light),var(--gold-mid) 48%,var(--gold-dark));
+ -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.plan.best{border-color:var(--gold-mid);box-shadow:0 0 0 1px rgba(215,168,67,.18),0 16px 44px rgba(7,27,48,.12)}
+.save{border-color:var(--gold-mid)}
+
 </style>
 </head>
 <body>
